@@ -65,7 +65,7 @@ nav {
 }
 
 nav a {
-  border: 2px solid black;
+  border: 1px solid black;
   padding: .5rem 2rem;
   background-color: palevioletred;
   text-decoration: none;
@@ -94,17 +94,17 @@ h1 {
   width: 35rem;
   height: 25rem;
   object-fit: cover;
-  margin: 10px;
+  margin: 3%;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   margin: 100px 0px 10px 50px;
-  float: right;
   border: 2px solid black;
   padding: 30px;
-  width: 20rem;
+  width: 30%;
+  height: 15rem;
   background-color: white;
 }
 
@@ -140,9 +140,8 @@ h1 {
   width: 300px;
   height: 350px;
   border-radius: 15px;
-  margin: 1rem;
+  margin: 1%;
   text-decoration: none;
-  margin: 3rem;
 }
 
 .project-gallery a img{
@@ -186,6 +185,11 @@ footer a {
   text-decoration: none;
   color: white;
   margin: 10px;
+}
+
+footer a:hover {
+  color: palevioletred;
+  background-color: white;
 }
 
 .project-gallery a:hover{
