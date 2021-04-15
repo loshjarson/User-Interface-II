@@ -1,1 +1,220 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #8fb0a9;
+}
+html{
+  scroll-padding-top: 70px;
+  box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+  background: palegoldenrod;
+  padding: 1.2rem 1.6rem;
+  box-shadow: 0px 5px 30px grey;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  border: 2px solid black;
+  padding: .5rem 2rem;
+  background-color: palevioletred;
+  text-decoration: none;
+  color: white;
+
+}
+
+nav a:hover {
+  background-color: white;
+  color: palevioletred;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: 'Permanent Marker', cursive;
+  margin: 1rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.intro img {
+  width: 35rem;
+  height: 25rem;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0px 10px 50px;
+  float: right;
+  border: 2px solid black;
+  padding: 30px;
+  width: 20rem;
+  background-color: white;
+}
+
+.info a {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  align-self: flex-start;
+  padding: 6px 10px;
+  text-decoration: none;
+  background-color: palevioletred;
+  color: white;
+}
+
+.info p {
+  margin: 20px 10px;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.project-gallery a {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  border-radius: 15px;
+  margin: 1rem;
+  text-decoration: none;
+  margin: 3rem;
+}
+
+.project-gallery a img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+a p {
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: x-large;
+  margin-bottom: 25px;
+}
+
+div {
+  padding-top: 125px;
+}
+
+footer {
+  background: palegoldenrod;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+footer p{
+  margin-bottom: 50px;
+}
+
+footer a {
+  border: 2px solid black;
+  padding: 15px 30px;
+  background-color: palevioletred;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.project-gallery a:hover{
+  box-shadow: 0px 5px 30px grey;
+}
+
+#project1{
+  background-color: #b695dc;
+}
+
+#project2 {
+  background-color: #a2e85f;
+}
+
+#project3{
+  background-color: #fe7f7d;
+}
+
+#project4 {
+  background-color: #b3e5ee;
+}
+
+#project5{
+  background-color: #18e4a6;
+}
+
+#project6 {
+  background-color: #ba4490;
+}
+
+#project7 {
+  background-color: #fab23a;
+}
+
+#project8 {
+  background-color: #ae3b46;
+}
