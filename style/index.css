@@ -127,6 +127,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
 
 }
 
@@ -168,6 +169,7 @@ footer {
   background: palegoldenrod;
   padding: 50px 30px;
   text-align: center;
+  width: 100%;
 }
 
 footer p{
