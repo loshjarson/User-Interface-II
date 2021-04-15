@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   font-family: 'Source Code Pro', monospace;
-  background-color: #8fb0a9;
+  background-color: #c8efe6f7;
 }
 html{
   scroll-padding-top: 70px;
@@ -119,6 +119,11 @@ h1 {
   color: white;
 }
 
+.info a:hover {
+  background-color: white;
+  color: palevioletred;
+}
+
 .info p {
   margin: 20px 10px;
 }
@@ -127,8 +132,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-
 }
 
 .project-gallery a {
@@ -202,7 +205,7 @@ footer a {
 }
 
 #project4 {
-  background-color: #b3e5ee;
+  background-color: #8fc9d3;
 }
 
 #project5{
