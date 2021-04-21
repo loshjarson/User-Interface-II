@@ -29,10 +29,21 @@ body {
 	line-height: 1;
   font-family: 'Source Code Pro', monospace;
   background-color: #c8efe6f7;
+  font-size: 62.5%;
+
 }
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html{
   scroll-padding-top: 70px;
   box-sizing: border-box;
+  max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -87,20 +98,22 @@ h1 {
 .intro {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
+  margin-top: 3%;
 }
 
 .intro img {
   width: 35rem;
   height: 25rem;
   object-fit: cover;
-  margin: 3%;
+  /* margin: 3%; */
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  margin: 100px 0px 10px 50px;
+  /* margin: 8rem 0 1rem 5rem; */
   border: 2px solid black;
   padding: 30px;
   width: 30%;
@@ -170,13 +183,13 @@ div {
 
 footer {
   background: palegoldenrod;
-  padding: 50px 30px;
+  padding: 5rem 3rem;
   text-align: center;
   width: 100%;
 }
 
 footer p{
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 footer a {
@@ -227,4 +240,8 @@ footer a:hover {
 
 #project8 {
   background-color: #ae3b46;
+}
+
+@media (max-width=) {
+  
 }
