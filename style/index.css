@@ -356,6 +356,7 @@ footer a:hover {
     align-items: center;
     margin-top: 15rem;
     margin-bottom: 3rem;
+    min-width: 100%;
   }
 
   .nav-menu.active {
