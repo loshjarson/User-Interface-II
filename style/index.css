@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,6 +69,10 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
 }
 
 h1 {
@@ -76,8 +81,22 @@ h1 {
   margin: 1rem;
 }
 
-nav ul {
+nav {
   display: flex;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
 
 nav a {
@@ -151,7 +170,7 @@ h2 {
   margin-bottom: 25px;
 }
 
-div {
+.container {
   padding-top: 125px;
 }
 
@@ -262,7 +281,7 @@ footer a:hover {
     flex-direction: column;
   }
 
-  header nav ul {
+  header nav {
     margin: auto;
   }
 
@@ -272,27 +291,61 @@ footer a:hover {
 
   header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     top: 1;
-    position: absolute;
   }
 
   h1 {
     margin: .5rem auto .25rem auto;
   }
 
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
   }
   
   nav a {
-    margin: 1rem auto;
-    width: 10rem;
-    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
   }
   
+  .nav-menu {
+    position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: lightgrey;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   .intro img{
     margin-bottom: 2%;
   }
@@ -304,5 +357,8 @@ footer a:hover {
     margin-bottom: 3rem;
   }
 
+  .nav-menu.active {
+    left: 0;
+  }
 
 }
