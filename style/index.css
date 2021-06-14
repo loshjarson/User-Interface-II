@@ -31,7 +31,6 @@ body {
   font-family: 'Source Code Pro', monospace;
   background-color: #c8efe6f7;
   font-size: 2.4rem;
-
 }
 
 * {
@@ -127,6 +126,7 @@ nav a:hover {
   width: 35rem;
   height: 25rem;
   object-fit: cover;
+  min-width: 30rem;
   /* margin: 3%; */
 }
 
@@ -172,6 +172,10 @@ h2 {
 
 .container {
   padding-top: 125px;
+}
+
+.projects {
+  align-content: center;
 }
 
 .project-gallery {
@@ -354,7 +358,7 @@ footer a:hover {
   .intro {
     flex-direction: column;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     min-width: 100%;
   }
@@ -363,4 +367,8 @@ footer a:hover {
     left: 0;
   }
 
+  body {
+    min-width: 450px;
+  }
+  
 }
