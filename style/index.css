@@ -246,6 +246,19 @@ h2 {
   margin: auto;
 }
 
+.bio {
+  margin: 9rem auto;
+  width: 90%;
+  font-size: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.bio h2 {
+  text-decoration: underline;
+}
+
 footer {
   background: palegoldenrod;
   padding: 5rem 3rem;
@@ -365,7 +378,7 @@ footer a:hover {
   }
 
   .nav-menu.active {
-    left: 2.5rem;
+    left: 1rem;
     margin: auto;
   }
 
