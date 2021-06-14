@@ -2,7 +2,6 @@
 let scrollPosition = 0
 const header = document.querySelector(".header");
 document.addEventListener("scroll", event => {
-    console.log(event.path[1])
     if (event.path[1].scrollY < scrollPosition) {
         header.style.opacity = "1"
         scrollPosition = event.path[1].scrollY
