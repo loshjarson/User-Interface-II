@@ -1,1 +1,389 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #c8efe6f7;
+  font-size: 2.4rem;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-padding-top: 70px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+  background: palegoldenrod;
+  padding: 1.2rem 1.6rem;
+  box-shadow: 0px 5px 30px grey;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  margin: 1rem;
+}
+
+nav {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+nav a {
+  border: 1px solid black;
+  padding: .5rem 2rem;
+  background-color: palevioletred;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+
+}
+
+nav a:hover {
+  background-color: white;
+  color: palevioletred;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.intro img {
+  width: 35rem;
+  height: 25rem;
+  object-fit: cover;
+  min-width: 30rem;
+  /* margin: 3%; */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 2rem;
+  width: 30%;
+  height: fit-content;
+  min-width: 25rem;
+  background-color: white;
+  margin-top: 5rem;
+}
+
+.info a {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: .5rem;
+  align-self: flex-start;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: palevioletred;
+  color: white;
+  font-size: 1rem;
+}
+
+.info a:hover {
+  background-color: white;
+  color: palevioletred;
+}
+
+.info p {
+  margin: 1%;
+  font-size: 1rem;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: x-large;
+  margin-bottom: 25px;
+}
+
+.container {
+  padding-top: 125px;
+}
+
+.projects {
+  align-content: center;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.project-gallery a {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 30rem;
+  border-radius: 15px;
+  margin: 1%;
+  text-decoration: none;
+}
+
+.project-gallery a img{
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.project-gallery a:hover{
+  box-shadow: 0px 5px 30px grey;
+}
+
+#project1{
+  background-color: #b695dc;
+}
+
+#project2 {
+  background-color: #a2e85f;
+}
+
+#project3{
+  background-color: #fe7f7d;
+}
+
+#project4 {
+  background-color: #8fc9d3;
+}
+
+#project5{
+  background-color: #18e4a6;
+}
+
+#project6 {
+  background-color: #ba4490;
+}
+
+#project7 {
+  background-color: #fab23a;
+}
+
+#project8 {
+  background-color: #ae3b46;
+}
+
+.project-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: auto;
+}
+
+.bio {
+  margin: 9rem auto;
+  width: 90%;
+  font-size: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.bio h2 {
+  text-decoration: underline;
+}
+
+footer {
+  background: palegoldenrod;
+  padding: 5rem 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+footer p{
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+footer a {
+  border: 2px solid black;
+  padding: 1rem 3rem;
+  background-color: palevioletred;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 1.5rem;
+
+}
+
+footer a:hover {
+  color: palevioletred;
+  background-color: white;
+}
+
+
+
+@media (max-width: 800px) {
+  h1 {
+    margin: .5rem auto 1rem auto;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav {
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  header {
+    flex-direction: row;
+    justify-content: unset;
+  }
+
+  h1 {
+    margin: .5rem .1rem .25rem .1rem;
+    font-size: 2rem;
+  }
+
+  .nav-bar {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding: 1rem 1.5rem;
+  }
+  
+  nav a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: lightgrey;
+        width: 20rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+        margin: 0 auto;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .intro img{
+    margin-bottom: 2%;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    min-width: 100%;
+  }
+
+  .nav-menu.active {
+    left: 1rem;
+    margin: auto;
+  }
+
+  .info {
+    margin-left: -4rem;
+  }
+  
+}
